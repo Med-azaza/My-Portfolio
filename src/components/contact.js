@@ -19,9 +19,9 @@ const Contact=()=>{
                     not just work with them. I want to bring my experience to the table where
                     we can work together to solve real problems in a way that optimizes our experience and knowledge. <br />
                     Feel free to reach out through any of the platforms below: <br />
-                    <a href='mailto:hamaaz666@gmail.com'>hamaaz666@gmail.com</a> <br />
-                    <a href="https://www.linkedin.com/in/mohamed-azaza-683445203/" target='_blank'>LinkedIn</a> <br />
-                    <a href="https://github.com/Med-azaza/">Github</a>
+                    <a rel="noreferrer" href='mailto:hamaaz666@gmail.com'>hamaaz666@gmail.com</a> <br />
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/mohamed-azaza-683445203/" target='_blank'>LinkedIn</a> <br />
+                    <a rel="noreferrer" href="https://github.com/Med-azaza/">Github</a>
                 </p>
             </section>
         </div>

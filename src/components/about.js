@@ -11,7 +11,7 @@ const About = () => {
             const options = {
                 strings: [
                     'Compiling... ^9000 Compiled successfully',
-                    '<code>const aboutMe=()=&gt;{ <br /> console.log("   </code> Hi, I am Med, I\'am a past computer science student with over 5 years of experience in the IT field. <code>);</code><br /><br /><code>console.log(" </code> You can call me a Front-end web developer, ReactJs developer and MERN developer,  I don\'t like to define myself by the work i\'ve done. I define myself by the work i want to do. Skills can be taught and i am always open to learn new things, especially continue challenging myself. <code>);</code> <br /><br /> <code>return(</code> You can read more about my experience, Skills, education and much more in the PDF below: <code>);</code> <br /> <a href=${resume} target="_blank">//My resume</a>  <br/> <code>}</code>'
+                    `<code>const aboutMe=()=&gt;{ <br /> console.log("   </code> Hi, I am Med, I'am a past computer science student with over 5 years of experience in the IT field. <code>);</code><br /><br /><code>console.log(" </code> You can call me a Front-end web developer, ReactJs developer and MERN developer,  I don't like to define myself by the work i've done. I define myself by the work i want to do. Skills can be taught and i am always open to learn new things, especially continue challenging myself. <code>);</code> <br /><br /> <code>return(</code> You can read more about my experience, Skills, education and much more in the PDF below: <code>);</code> <br /> <a href=${resume} target="_blank">//My resume</a>  <br/> <code>}</code>`
                 ],
                 typeSpeed: 6,
                 backSpeed: 20,

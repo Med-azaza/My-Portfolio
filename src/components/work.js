@@ -20,7 +20,7 @@ const Work=()=>{
             </ul>
             <section>
                 <div className="link">
-                    <a href="https://reacttodoapp0.netlify.app/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://reacttodoapp0.netlify.app/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>React TODO app</h2></div>
@@ -39,7 +39,7 @@ const Work=()=>{
             </section>
             <section>
                 <div className="link">
-                    <a href="https://rpsgame-01.netlify.app/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://rpsgame-01.netlify.app/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>Rock paper scissors Game</h2></div>
@@ -58,7 +58,7 @@ const Work=()=>{
             </section>
             <section>
                 <div className="link">
-                    <a href="https://tnfeed.netlify.app/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://tnfeed.netlify.app/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>TnFeed Social Network app</h2></div>
@@ -82,7 +82,7 @@ const Work=()=>{
             </section>
             <section>
                 <div className="link">
-                    <a href="https://med-azaza.github.io/blogr/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://med-azaza.github.io/blogr/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>Blogr Landing page</h2></div>
@@ -103,7 +103,7 @@ const Work=()=>{
             </section>
             <section>
                 <div className="link">
-                    <a href="https://med-azaza.github.io/weather-app/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://med-azaza.github.io/weather-app/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>Weather app</h2></div>
@@ -125,7 +125,7 @@ const Work=()=>{
             </section>
             <section>
                 <div className="link">
-                    <a href="https://med-azaza.github.io/restaurant-site-project/" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
+                    <a href="https://med-azaza.github.io/restaurant-site-project/" rel="noreferrer" target='_blank'>Live Demo <i class="fas fa-angle-double-right"></i></a>
                 </div>
                 <div className="name">
                 <h2>Restaurant website</h2></div>

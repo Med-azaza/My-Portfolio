@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import blob from '../img/blob.svg';
 
 const Home = () => {
-  let tapped = false;
   const showLinks = () => {
     document.querySelector('.about-link').classList.toggle('mobile-about');
     document.querySelector('.work-link').classList.toggle('mobile-work');
