@@ -1,38 +1,895 @@
-.App {
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: "Cutive Mono", monospace;
+}
+
+#root .App {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 170px;
+  background-color: black;
+}
+
+#root .App .container {
+  overflow: auto;
+  width: 100%;
+}
+
+#root .App .container .Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#root .App .container .Home .mobile {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  z-index: 999;
+}
+
+#root .App .container .Home .mobile p {
+  opacity: 0;
+  -webkit-animation: bounce 2s ease both infinite, show 1s;
+          animation: bounce 2s ease both infinite, show 1s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#root .App .container .Home .welcome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 6em;
+  color: white;
+  -webkit-animation: fadeAway 4s;
+          animation: fadeAway 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#root .App .container .Home .welcome span {
+  color: #1976d2;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+#root .App .container .Home .imageContainer {
+  -webkit-animation: moveUp 6s ease both;
+          animation: moveUp 6s ease both;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .App .container .Home .imageContainer img {
+  width: 100%;
+  -webkit-animation: rotate 6s infinite;
+          animation: rotate 6s infinite;
+}
+
+#root .App .container .Home .textContainer {
+  -webkit-animation: moveLeft 6s ease both;
+          animation: moveLeft 6s ease both;
+  width: 50%;
+  height: 100%;
+  padding: 70px 0;
+}
+
+#root .App .container .Home .textContainer .about-link:hover span:after {
+  content: "About";
+}
+
+#root .App .container .Home .textContainer .work-link:hover span:after {
+  content: "Work";
+}
+
+#root .App .container .Home .textContainer .contact-link:hover span:after {
+  content: "Contact";
+}
+
+#root .App .container .Home .textContainer span {
+  font-weight: 700;
+  font-size: 5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#root .App .container .Home .textContainer span:hover {
+  margin-left: 30px;
+}
+
+#root .App .container .Home .textContainer .about-link span:after {
+  color: white;
+  content: "Hello.";
+}
+
+#root .App .container .Home .textContainer .work-link span:after {
+  color: #1976d2;
+  content: "I am";
+}
+
+#root .App .container .Home .textContainer .contact-link span:after {
+  color: #1976d2;
+  content: "Med";
+}
+
+#root .App .container .Error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .App .container .Error h1 {
+  font-size: 4em;
+  font-weight: 700;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root .App .container .Error img {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: wave 1s infinite;
+          animation: wave 1s infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#root .App .container .Work,
+#root .App .container .About,
+#root .App .container .Contact {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#root .App .container .About {
+  overflow: scroll;
+  height: 250vh;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#root .App .container .About header {
+  -webkit-animation: aboutHeader 1s ease both;
+          animation: aboutHeader 1s ease both;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .App .container .About header p {
+  font-weight: 700;
+  font-size: 4em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#root .App .container .About header p i {
+  font-size: 0.8em;
+  color: #1976d2;
+}
+
+#root .App .container .About section {
+  width: 100%;
+  height: 150vh;
+  padding: 0 150px;
+}
+
+#root .App .container .About section h3 {
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+#root .App .container .About section p {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+#root .App .container .About section p code {
+  font-weight: 100;
+  font-size: 1em;
+  color: rgba(19, 226, 19, 0.685);
+}
+
+#root .App .container .About section p a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #1976d2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#root .App .container .About section p a:hover {
+  margin-left: 20px;
+}
+
+#root .App .container .Work {
+  width: 100%;
+}
+
+#root .App .container .Work section {
+  height: 100vh;
+  position: relative;
+  -webkit-animation: moveLeftWork 1s ease both;
+          animation: moveLeftWork 1s ease both;
+}
+
+#root .App .container .Work section .link {
+  -webkit-animation: link 3s ease both infinite;
+          animation: link 3s ease both infinite;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+#root .App .container .Work section .link a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#root .App .container .Work section .link a:hover {
+  color: #1976d2;
+}
+
+#root .App .container .Work section .link i {
+  font-size: inherit;
+}
+
+#root .App .container .Work section .name {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#root .App .container .Work section .name h2 {
+  font-weight: 700;
+  font-size: 4em;
+}
+
+#root .App .container .Work section .showcase {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .App .container .Work section .showcase .image {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .App .container .Work section .showcase .image img {
+  height: 240px;
+  width: 450px;
+  border: 1px solid gray;
+  border-top: 13px solid gray;
+  border-radius: 5px;
+}
+
+#root .App .container .Work section .showcase .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+#root .App .container .Work section .showcase .description .techs {
+  margin-top: 50px;
+}
+
+#root .App .container .Work section .showcase .description .techs i {
+  font-size: 55px;
+  margin-right: 15px;
+}
+
+#root .App .container .Work section .showcase .description .techs img {
+  height: 55px;
+  width: 55px;
+  margin-right: 15px;
+}
+
+#root .App .container .Work section .showcase .description .techs img.express {
+  width: 120px;
+}
+
+#root .App .container .Work section .showcase .description p,
+#root .App .container .Work section .showcase .description h4 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+#root .App .container .Contact header {
+  -webkit-animation: aboutHeader 1s ease both;
+          animation: aboutHeader 1s ease both;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .App .container .Contact header p {
+  font-weight: 700;
+  font-size: 4em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#root .App .container .Contact section {
+  width: 100%;
+  height: 100vh;
+  padding: 0 150px;
+}
+
+#root .App .container .Contact section h3 {
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+#root .App .container .Contact section p {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+#root .App .container .Contact section p a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #1976d2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#root .App .container .Contact section p a:hover {
+  margin-left: 20px;
+}
+
+.nav-list {
+  position: fixed;
+  right: 50px;
+  z-index: 999;
+  list-style-type: none;
+  -webkit-animation: navList 3s ease both;
+          animation: navList 3s ease both;
+}
+
+.nav-list li a {
+  color: rgba(255, 255, 255, 0.199);
+  font-weight: 700;
+  font-size: 2em;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.nav-list li a:hover {
+  color: white;
+  margin-left: 20px;
+}
+
+@-webkit-keyframes navList {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  66% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
   }
 }
+
+@keyframes navList {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  66% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  66% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  66% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveLeftWork {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes moveLeftWork {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  66% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  66% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes fadeAway {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes aboutHeader {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes aboutHeader {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes link {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes link {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+Link,
+a {
+  text-decoration: none;
+}
+
+.blob-mobile {
+  opacity: 0.2 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.top {
+  z-index: 1000 !important;
+}
+
+.mobile-about span:after {
+  content: "About" !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-left: 30px;
+}
+
+.mobile-work span:after {
+  content: "Work" !important;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  margin-left: 30px;
+}
+
+.mobile-contact span:after {
+  content: "Contact" !important;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  #root .App {
+    padding: 0 50px;
+  }
+  #root .App .container .Home .mobile {
+    visibility: visible;
+  }
+  #root .App .container .Home .imageConatiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #root .App {
+    padding: 0 15px;
+  }
+  #root .App .container .Home .welcome {
+    font-size: 3em;
+  }
+  #root .App .container .Home .imageContainer img {
+    width: 300px;
+    height: 300px;
+  }
+  #root .App .container .Home .textContainer span {
+    font-weight: 700;
+    font-size: 3em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+/*# sourceMappingURL=App.css.map */
