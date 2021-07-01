@@ -502,8 +502,8 @@ code {
   right: 50px;
   z-index: 999;
   list-style-type: none;
-  -webkit-animation: navList 3s ease both;
-          animation: navList 3s ease both;
+  -webkit-animation: navList 1s ease both;
+          animation: navList 1s ease both;
 }
 
 .nav-list li a {
@@ -520,13 +520,43 @@ code {
   margin-left: 20px;
 }
 
+.nav-btn {
+  position: fixed;
+  z-index: 1000;
+  display: none;
+  border: 0;
+  border-radius: 50%;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nav-btn i {
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.clicked {
+  background-color: white !important;
+}
+
+.clicked i {
+  color: black !important;
+}
+
+.show {
+  display: block !important;
+}
+
 @-webkit-keyframes navList {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    opacity: 0;
-  }
-  66% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     opacity: 0;
@@ -540,11 +570,6 @@ code {
 
 @keyframes navList {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    opacity: 0;
-  }
-  66% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     opacity: 0;
@@ -862,6 +887,15 @@ a {
   margin-left: 30px;
 }
 
+@media (max-width: 1024px) {
+  #root .App {
+    padding: 0 120px;
+  }
+  #root .App .container .About section {
+    padding: 0 70px;
+  }
+}
+
 @media (max-width: 768px) {
   #root .App {
     padding: 0 50px;
@@ -905,6 +939,32 @@ a {
     font-size: 3em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+  }
+  #root .App .container .About header p {
+    font-size: 2em;
+  }
+  #root .App .container .About section {
+    padding: 0 15px;
+  }
+  #root .App .container .About section h3 {
+    font-size: 1.5em;
+  }
+  #root .App .container .About section p {
+    font-size: 1em;
+  }
+  .nav-list {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: 1px solid #1976d2;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
+  .nav-list li a {
+    color: white;
+  }
+  .nav-btn {
+    display: block;
   }
 }
 /*# sourceMappingURL=App.css.map */

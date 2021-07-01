@@ -5,6 +5,10 @@ import resume from '../files/Mohemed_Azaza_resume.pdf';
 const About = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0;
+    const show = (e) => {
+        document.querySelector('.nav-btn').classList.toggle('clicked');
+        document.querySelector('.nav-list').classList.toggle('show');
+    }
         const el = React.useRef(null);
         const typed = React.useRef(null);
         React.useEffect(() => {
@@ -23,6 +27,7 @@ const About = () => {
         }, []);
     return(
         <div className="About">
+            <button onClick={show} className='nav-btn'><i className="fas fa-bars"></i></button>
             <ul className="nav-list">
                 <li><Link  to='/'>Home</Link></li>
                 <li><Link to='/work'>Work</Link></li>

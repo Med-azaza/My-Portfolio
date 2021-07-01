@@ -322,7 +322,7 @@ $primary: #1976d2;
   right: 50px;
   z-index: 999;
   list-style-type: none;
-  animation: navList 3s ease both;
+  animation: navList 1s ease both;
   li {
     a {
       color: rgba(255, 255, 255, 0.199);
@@ -337,13 +337,33 @@ $primary: #1976d2;
     }
   }
 }
+.nav-btn {
+  position: fixed;
+  z-index: 1000;
+  display: none;
+  border: 0;
+  border-radius: 50%;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  user-select: none;
+  i {
+    color: white;
+    user-select: none;
+  }
+}
+.clicked {
+  background-color: white !important;
+  i {
+    color: black !important;
+  }
+}
+.show {
+  display: block !important;
+}
 //Keyfarmes//
 @keyframes navList {
   0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  66% {
     transform: translateX(100%);
     opacity: 0;
   }
@@ -485,6 +505,21 @@ a {
   margin-left: 30px;
 }
 //media queries
+@media (max-width: 1024px) {
+  #root {
+    .App {
+      padding: 0 120px;
+      .container {
+        .About {
+          section {
+            padding: 0 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #root {
     .App {
@@ -531,7 +566,38 @@ a {
             }
           }
         }
+        .About {
+          header {
+            p {
+              font-size: 2em;
+            }
+          }
+          section {
+            padding: 0 15px;
+            h3 {
+              font-size: 1.5em;
+            }
+            p {
+              font-size: 1em;
+            }
+          }
+        }
       }
     }
+  }
+  .nav-list {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: 1px solid $primary;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+  .nav-btn {
+    display: block;
   }
 }
