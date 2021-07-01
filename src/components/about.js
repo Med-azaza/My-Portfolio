@@ -47,7 +47,7 @@ const About = () => {
                     <code>);</code> <br /><br />
                     <code>return(</code>
                     You can read more about my experience, Skills, education and much more in the PDF below:
-                    <code>);</code> <br /> <code>{ '}'}</code> */}
+                    <code>);</code> <br /> <code>{ '}'}</code> */} 
                 </p>
             </section>
         </div>
