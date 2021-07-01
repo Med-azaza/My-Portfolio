@@ -24,8 +24,8 @@ const Home = () => {
           <Link className='contact-link' to='/contact'><span></span></Link> <br />
         </div>
         <div className="imageContainer">
-          <img className='blob' src={blob } alt="rotating blob" />
-          <img className='photo' src={photo} alt="my photo" />
+          <img className='blob' src={blob} alt="rotating blob" />
+          <img className='photo' src={photo} alt="owner of the portfolio" />
         </div>
       </div>
     )
