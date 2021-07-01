@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import blob from '../img/blob.svg';
+import photo from '../img/my_photo.jpg';
 
 const Home = () => {
   const showLinks = () => {
@@ -23,7 +24,8 @@ const Home = () => {
           <Link className='contact-link' to='/contact'><span></span></Link> <br />
         </div>
         <div className="imageContainer">
-          <img src={blob } alt="rotating blob" />
+          <img className='blob' src={blob } alt="rotating blob" />
+          <img className='photo' src={photo} alt="my photo" />
         </div>
       </div>
     )

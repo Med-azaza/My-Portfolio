@@ -117,6 +117,7 @@ code {
           animation: moveUp 6s ease both;
   width: 50%;
   height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,10 +129,17 @@ code {
           justify-content: center;
 }
 
-#root .App .container .Home .imageContainer img {
+#root .App .container .Home .imageContainer .blob {
   width: 100%;
   -webkit-animation: rotate 6s infinite;
           animation: rotate 6s infinite;
+}
+
+#root .App .container .Home .imageContainer .photo {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
 }
 
 #root .App .container .Home .textContainer {
@@ -878,12 +886,19 @@ a {
   #root .App {
     padding: 0 15px;
   }
+  #root .App .container .Home {
+    height: 90vh;
+  }
   #root .App .container .Home .welcome {
     font-size: 3em;
   }
-  #root .App .container .Home .imageContainer img {
+  #root .App .container .Home .imageContainer .blob {
     width: 300px;
     height: 300px;
+  }
+  #root .App .container .Home .imageContainer .photo {
+    width: 100px;
+    height: 100px;
   }
   #root .App .container .Home .textContainer span {
     font-weight: 700;

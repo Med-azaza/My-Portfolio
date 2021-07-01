@@ -75,10 +75,17 @@ $primary: #1976d2;
           animation: moveUp 6s ease both;
           width: 50%;
           height: 100%;
+          position: relative;
           @include center();
-          img {
+          .blob {
             width: 100%;
             animation: rotate 6s infinite;
+          }
+          .photo {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
           }
         }
         .textContainer {
@@ -502,13 +509,18 @@ a {
       padding: 0 15px;
       .container {
         .Home {
+          height: 90vh;
           .welcome {
             font-size: 3em;
           }
           .imageContainer {
-            img {
+            .blob {
               width: 300px;
               height: 300px;
+            }
+            .photo {
+              width: 100px;
+              height: 100px;
             }
           }
           .textContainer {
