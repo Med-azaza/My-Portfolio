@@ -8,6 +8,8 @@ const About = () => {
     const show = (e) => {
         document.querySelector('.nav-btn').classList.toggle('clicked');
         document.querySelector('.nav-list').classList.toggle('show');
+        let p = document.querySelectorAll('p');
+        p.forEach(el => el.classList.toggle('opacity'));
     }
         const el = React.useRef(null);
         const typed = React.useRef(null);

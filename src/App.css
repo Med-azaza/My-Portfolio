@@ -555,6 +555,10 @@ code {
   display: block !important;
 }
 
+.opacity {
+  opacity: 0.4;
+}
+
 @-webkit-keyframes navList {
   0% {
     -webkit-transform: translateX(100%);
@@ -894,6 +898,32 @@ a {
   #root .App .container .About section {
     padding: 0 70px;
   }
+  #root .App .container .Contact section {
+    padding: 0 70px;
+  }
+  #root .App .container .Work section .name h2 {
+    font-size: 3em;
+  }
+  #root .App .container .Work section .showcase .image img {
+    height: 200px;
+    width: 360px;
+  }
+  #root .App .container .Work section .showcase .description .techs i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  #root .App .container .Work section .showcase .description .techs img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  #root .App .container .Work section .showcase .description .techs img.express {
+    width: 90px;
+  }
+  #root .App .container .Work section .showcase .description p,
+  #root .App .container .Work section .showcase .description h4 {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -913,6 +943,29 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #root .App .container .Work section .name h2 {
+    font-size: 2em;
+  }
+  #root .App .container .Work section .showcase .image img {
+    height: 150px;
+    width: 270px;
+  }
+  #root .App .container .Work section .showcase .description .techs i {
+    font-size: 25px;
+    margin-right: 8px;
+  }
+  #root .App .container .Work section .showcase .description .techs img {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+  }
+  #root .App .container .Work section .showcase .description .techs img.express {
+    width: 60px;
+  }
+  #root .App .container .Work section .showcase .description p,
+  #root .App .container .Work section .showcase .description h4 {
+    font-size: 1.1em;
   }
 }
 
@@ -952,13 +1005,66 @@ a {
   #root .App .container .About section p {
     font-size: 1em;
   }
+  #root .App .container .Contact header p {
+    font-size: 2em;
+  }
+  #root .App .container .Contact section {
+    padding: 0 15px;
+  }
+  #root .App .container .Contact section h3 {
+    font-size: 1.5em;
+  }
+  #root .App .container .Contact section p {
+    font-size: 1em;
+  }
+  #root .App .container .Work section {
+    height: 130vh;
+  }
+  #root .App .container .Work section .link {
+    bottom: -35px;
+  }
+  #root .App .container .Work section .name {
+    height: 20%;
+  }
+  #root .App .container .Work section .name h2 {
+    font-size: 1.5em;
+  }
+  #root .App .container .Work section .showcase {
+    height: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #root .App .container .Work section .showcase .image {
+    width: 100%;
+  }
+  #root .App .container .Work section .showcase .image img {
+    height: 150px;
+    width: 270px;
+  }
+  #root .App .container .Work section .showcase .description {
+    width: 100%;
+  }
+  #root .App .container .Work section .showcase .description .techs i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  #root .App .container .Work section .showcase .description .techs img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  #root .App .container .Work section .showcase .description .techs img.express {
+    width: 90px;
+  }
+  #root .App .container .Work section .showcase .description p,
+  #root .App .container .Work section .showcase .description h4 {
+    font-size: 1.3em;
+  }
   .nav-list {
     display: none;
-    background-color: rgba(0, 0, 0, 0.623);
-    border: 1px solid #1976d2;
     border-radius: 5px;
-    -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
   }
   .nav-list li a {
     color: white;

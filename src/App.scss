@@ -361,6 +361,9 @@ $primary: #1976d2;
 .show {
   display: block !important;
 }
+.opacity {
+  opacity: 0.4;
+}
 //Keyfarmes//
 @keyframes navList {
   0% {
@@ -515,6 +518,48 @@ a {
             padding: 0 70px;
           }
         }
+        .Contact {
+          section {
+            padding: 0 70px;
+          }
+        }
+        .Work {
+          section {
+            .name {
+              h2 {
+                font-size: 3em;
+              }
+            }
+            .showcase {
+              .image {
+                img {
+                  height: 200px;
+                  width: 360px;
+                }
+              }
+              .description {
+                .techs {
+                  i {
+                    font-size: 40px;
+                    margin-right: 10px;
+                  }
+                  img {
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 10px;
+                  }
+                  img.express {
+                    width: 90px;
+                  }
+                }
+                p,
+                h4 {
+                  font-size: 1.3em;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -531,6 +576,43 @@ a {
           }
           .imageConatiner {
             @include center();
+          }
+        }
+        .Work {
+          section {
+            .name {
+              h2 {
+                font-size: 2em;
+              }
+            }
+            .showcase {
+              .image {
+                img {
+                  height: 150px;
+                  width: 270px;
+                }
+              }
+              .description {
+                .techs {
+                  i {
+                    font-size: 25px;
+                    margin-right: 8px;
+                  }
+                  img {
+                    height: 25px;
+                    width: 25px;
+                    margin-right: 8px;
+                  }
+                  img.express {
+                    width: 60px;
+                  }
+                }
+                p,
+                h4 {
+                  font-size: 1.1em;
+                }
+              }
+            }
           }
         }
       }
@@ -582,15 +664,74 @@ a {
             }
           }
         }
+        .Contact {
+          header {
+            p {
+              font-size: 2em;
+            }
+          }
+          section {
+            padding: 0 15px;
+            h3 {
+              font-size: 1.5em;
+            }
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+        .Work {
+          section {
+            height: 130vh;
+            .link {
+              bottom: -35px;
+            }
+            .name {
+              height: 20%;
+              h2 {
+                font-size: 1.5em;
+              }
+            }
+            .showcase {
+              height: 80%;
+              flex-direction: column;
+              .image {
+                width: 100%;
+                img {
+                  height: 150px;
+                  width: 270px;
+                }
+              }
+              .description {
+                width: 100%;
+                .techs {
+                  i {
+                    font-size: 40px;
+                    margin-right: 10px;
+                  }
+                  img {
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 10px;
+                  }
+                  img.express {
+                    width: 90px;
+                  }
+                }
+                p,
+                h4 {
+                  font-size: 1.3em;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
   .nav-list {
     display: none;
-    background-color: rgba(0, 0, 0, 0.623);
-    border: 1px solid $primary;
     border-radius: 5px;
-    backdrop-filter: blur(7px);
     li {
       a {
         color: white;
