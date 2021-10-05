@@ -188,7 +188,7 @@ const Work = () => {
       <section>
         <div className="link">
           <a
-            href="https://med-azaza.github.io/blogr/"
+            href="https://blogr01.netlify.app"
             rel="noreferrer"
             target="_blank"
           >
@@ -222,7 +222,7 @@ const Work = () => {
       <section>
         <div className="link">
           <a
-            href="https://med-azaza.github.io/weather-app/"
+            href="https://weather-app88.netlify.app/"
             rel="noreferrer"
             target="_blank"
           >
@@ -263,7 +263,7 @@ const Work = () => {
       <section>
         <div className="link">
           <a
-            href="https://med-azaza.github.io/restaurant-site-project/"
+            href="https://restaurant88.netlify.app/"
             rel="noreferrer"
             target="_blank"
           >
