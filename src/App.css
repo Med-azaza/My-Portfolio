@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 18px;
   font-weight: 300;
 }
@@ -37,11 +37,11 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -57,17 +57,17 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: white;
   z-index: 999;
 }
@@ -75,11 +75,11 @@ code {
 #root .App .container .Home .mobile p {
   opacity: 0;
   -webkit-animation: bounce 2s ease both infinite, show 1s;
-  animation: bounce 2s ease both infinite, show 1s;
+          animation: bounce 2s ease both infinite, show 1s;
   -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+          animation-delay: 6s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #root .App .container .Home .welcome {
@@ -92,18 +92,18 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 6em;
   color: white;
   -webkit-animation: fadeAway 4s;
-  animation: fadeAway 4s;
+          animation: fadeAway 4s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #root .App .container .Home .welcome span {
@@ -114,7 +114,7 @@ code {
 
 #root .App .container .Home .imageContainer {
   -webkit-animation: moveUp 6s ease both;
-  animation: moveUp 6s ease both;
+          animation: moveUp 6s ease both;
   width: 50%;
   height: 100%;
   position: relative;
@@ -122,29 +122,43 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #root .App .container .Home .imageContainer .blob {
   width: 100%;
   -webkit-animation: rotate 6s infinite;
-  animation: rotate 6s infinite;
+          animation: rotate 6s infinite;
 }
 
 #root .App .container .Home .imageContainer .photo {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+  #root .App .container .Home .imageContainer .photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #root .App .container .Home .imageContainer .photo {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 #root .App .container .Home .textContainer {
   -webkit-animation: moveLeft 6s ease both;
-  animation: moveLeft 6s ease both;
+          animation: moveLeft 6s ease both;
   width: 50%;
   height: 100%;
   padding: 70px 0;
@@ -167,9 +181,9 @@ code {
   font-size: 5em;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -198,18 +212,18 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   height: 100vh;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #root .App .container .Error h1 {
@@ -223,7 +237,7 @@ code {
   width: 100px;
   height: 100px;
   -webkit-animation: wave 1s infinite;
-  animation: wave 1s infinite;
+          animation: wave 1s infinite;
 }
 
 #root .App .container .Work,
@@ -240,27 +254,27 @@ code {
 
 #root .App .container .About header {
   -webkit-animation: aboutHeader 1s ease both;
-  animation: aboutHeader 1s ease both;
+          animation: aboutHeader 1s ease both;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #root .App .container .About header p {
   font-weight: 700;
   font-size: 4em;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #root .App .container .About header p i {
@@ -311,12 +325,12 @@ code {
   height: 100vh;
   position: relative;
   -webkit-animation: moveLeftWork 1s ease both;
-  animation: moveLeftWork 1s ease both;
+          animation: moveLeftWork 1s ease both;
 }
 
 #root .App .container .Work section .link {
   -webkit-animation: link 3s ease both infinite;
-  animation: link 3s ease both infinite;
+          animation: link 3s ease both infinite;
   position: absolute;
   bottom: 20px;
   right: 0;
@@ -345,14 +359,14 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #root .App .container .Work section .name h2 {
@@ -367,11 +381,11 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #root .App .container .Work section .showcase .image {
@@ -381,11 +395,11 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #root .App .container .Work section .showcase .image img {
@@ -401,18 +415,18 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
   height: 100%;
 }
@@ -444,27 +458,27 @@ code {
 
 #root .App .container .Contact header {
   -webkit-animation: aboutHeader 1s ease both;
-  animation: aboutHeader 1s ease both;
+          animation: aboutHeader 1s ease both;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #root .App .container .Contact header p {
   font-weight: 700;
   font-size: 4em;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #root .App .container .Contact section {
@@ -503,7 +517,7 @@ code {
   z-index: 999;
   list-style-type: none;
   -webkit-animation: navList 1s ease both;
-  animation: navList 1s ease both;
+          animation: navList 1s ease both;
 }
 
 .nav-list li a {
@@ -530,17 +544,17 @@ code {
   height: 50px;
   width: 50px;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .nav-btn i {
   color: white;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .clicked {
@@ -562,12 +576,12 @@ code {
 @-webkit-keyframes navList {
   0% {
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -575,12 +589,12 @@ code {
 @keyframes navList {
   0% {
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -612,82 +626,82 @@ code {
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes moveLeft {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   66% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes moveLeft {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   66% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
   50% {
     -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   100% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
   50% {
     -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   100% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -712,52 +726,52 @@ code {
 @-webkit-keyframes moveLeftWork {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes moveLeftWork {
   0% {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes moveUp {
   0% {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   66% {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   100% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes moveUp {
   0% {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   66% {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   100% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -765,11 +779,11 @@ code {
   0% {
     opacity: 1;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   50% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
   80% {
     opacity: 1;
@@ -784,11 +798,11 @@ code {
   0% {
     opacity: 1;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
   }
   50% {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
   }
   80% {
     opacity: 1;
@@ -802,12 +816,12 @@ code {
 @-webkit-keyframes aboutHeader {
   from {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
     opacity: 0.2;
   }
   to {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
   }
 }
@@ -815,12 +829,12 @@ code {
 @keyframes aboutHeader {
   from {
     -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+            transform: translateY(100%);
     opacity: 0.2;
   }
   to {
     -webkit-transform: translateY(0%);
-    transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
   }
 }
@@ -828,30 +842,30 @@ code {
 @-webkit-keyframes link {
   0% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
   50% {
     -webkit-transform: translateX(-30%);
-    transform: translateX(-30%);
+            transform: translateX(-30%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes link {
   0% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
   50% {
     -webkit-transform: translateX(-30%);
-    transform: translateX(-30%);
+            transform: translateX(-30%);
   }
   100% {
     -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -917,15 +931,7 @@ a {
     width: 40px;
     margin-right: 10px;
   }
-  #root
-    .App
-    .container
-    .Work
-    section
-    .showcase
-    .description
-    .techs
-    img.express {
+  #root .App .container .Work section .showcase .description .techs img.express {
     width: 90px;
   }
   #root .App .container .Work section .showcase .description p,
@@ -946,11 +952,11 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #root .App .container .Work section .name h2 {
     font-size: 2em;
@@ -968,15 +974,7 @@ a {
     width: 25px;
     margin-right: 8px;
   }
-  #root
-    .App
-    .container
-    .Work
-    section
-    .showcase
-    .description
-    .techs
-    img.express {
+  #root .App .container .Work section .showcase .description .techs img.express {
     width: 60px;
   }
   #root .App .container .Work section .showcase .description p,
@@ -1035,7 +1033,6 @@ a {
   }
   #root .App .container .Work section {
     height: 130vh;
-    margin-bottom: 30px;
   }
   #root .App .container .Work section .link {
     bottom: -35px;
@@ -1050,8 +1047,8 @@ a {
     height: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #root .App .container .Work section .showcase .image {
     width: 100%;
@@ -1072,15 +1069,7 @@ a {
     width: 40px;
     margin-right: 10px;
   }
-  #root
-    .App
-    .container
-    .Work
-    section
-    .showcase
-    .description
-    .techs
-    img.express {
+  #root .App .container .Work section .showcase .description .techs img.express {
     width: 90px;
   }
   #root .App .container .Work section .showcase .description p,
