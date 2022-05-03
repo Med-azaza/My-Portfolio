@@ -131,15 +131,15 @@ code {
 
 #root .App .container .Home .imageContainer .blob {
   width: 100%;
-  -webkit-animation: rotate 6s infinite;
-          animation: rotate 6s infinite;
 }
 
 #root .App .container .Home .imageContainer .photo {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1440px) {
@@ -402,12 +402,55 @@ code {
           justify-content: center;
 }
 
-#root .App .container .Work section .showcase .image img {
-  height: 240px;
-  width: 450px;
-  border: 1px solid gray;
-  border-top: 13px solid gray;
+#root .App .container .Work section .showcase .image .imageWrapper {
+  border: 2px solid #62757f;
+  border-top: 15px solid #62757f;
   border-radius: 5px;
+  height: 230px;
+  width: 470px;
+  position: relative;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper .dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5px;
+  top: -15px;
+  left: 5px;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper .dots div {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper .dots div:nth-child(1) {
+  background-color: #ff1744;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper .dots div:nth-child(2) {
+  background-color: #ffff00;
+}
+
+#root .App .container .Work section .showcase .image .imageWrapper .dots div:nth-child(3) {
+  background-color: #76ff03;
 }
 
 #root .App .container .Work section .showcase .description {
