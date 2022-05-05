@@ -1106,7 +1106,7 @@ a {
 
 @media (max-width: 600px) {
   #root .App {
-    padding: 0 50px;
+    padding: 0 10px;
   }
   #root .App .container .Home {
     height: 90vh;
@@ -1156,9 +1156,7 @@ a {
     padding: 50px 0;
   }
   #root .App .container .Work section {
-    height: 130vh;
     margin-bottom: 50px;
-    padding: 0;
   }
   #root .App .container .Work section svg {
     width: 35px;
@@ -1170,6 +1168,10 @@ a {
   #root .App .container .Work section .name {
     height: 20%;
     margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
   }
   #root .App .container .Work section .name h2 {
     font-size: 1.3em;
@@ -1191,6 +1193,7 @@ a {
   }
   #root .App .container .Work section .showcase .description {
     width: 100%;
+    padding: 0 20px;
   }
   #root .App .container .Work section .showcase .description .techs i {
     font-size: 40px;
@@ -1207,6 +1210,7 @@ a {
   #root .App .container .Work section .showcase .description p,
   #root .App .container .Work section .showcase .description h4 {
     font-size: 1.3em;
+    font-size: 1em;
   }
   .nav-list {
     display: none;

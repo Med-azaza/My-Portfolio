@@ -703,7 +703,7 @@ a {
 @media (max-width: 600px) {
   #root {
     .App {
-      padding: 0 50px;
+      padding: 0 10px;
       .container {
         .Home {
           height: 90vh;
@@ -763,9 +763,9 @@ a {
         .Work {
           padding: 50px 0;
           section {
-            height: 130vh;
+            //height: 130vh;
             margin-bottom: 50px;
-            padding: 0;
+            //padding: 0;
             svg {
               width: 35px;
             }
@@ -776,6 +776,8 @@ a {
             .name {
               height: 20%;
               margin: 0;
+              justify-content: center;
+              margin-bottom: 20px;
               h2 {
                 font-size: 1.3em;
               }
@@ -793,6 +795,7 @@ a {
               }
               .description {
                 width: 100%;
+                padding: 0 20px;
                 .techs {
                   i {
                     font-size: 40px;
@@ -810,6 +813,7 @@ a {
                 p,
                 h4 {
                   font-size: 1.3em;
+                  font-size: 1em;
                 }
               }
             }
