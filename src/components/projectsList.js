@@ -2,6 +2,9 @@ import todo from "../img/todo.png";
 import tnfeed from "../img/tnfeed.png";
 import weather from "../img/weather.png";
 import chat from "../img/chatapp.png";
+import ss from "../img/ss.png";
+import nftfever from "../img/nftfever.png";
+import mdv from "../img/mdv.png";
 import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -12,9 +15,42 @@ import {
   SiCss3,
   SiJavascript,
   SiJquery,
+  SiFramer,
 } from "react-icons/si";
 
 const projects = [
+  {
+    link: "https://milliondollarvault.io/",
+    title: "Million Dollar Vault",
+    description: "Million Dollar Vault NFT project landing page.",
+    preview: mdv,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "Firebase", logo: <SiFirebase /> },
+    ],
+  },
+  {
+    link: "https://shrewdsharks.io/",
+    title: "Shrewd Sharks",
+    description:
+      "Shrewd Sharks NFT project landing page with implementation of transitions and animations using farmer motion.",
+    preview: ss,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "Firebase", logo: <SiFirebase /> },
+      { name: "Framer Motion", logo: <SiFramer /> },
+    ],
+  },
+  {
+    link: "https://nftfever.io/",
+    title: "NFT Fever",
+    description: "NFT learning website using video courses.",
+    preview: nftfever,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "Firebase", logo: <SiFirebase /> },
+    ],
+  },
   {
     link: "https://tnfeed.live",
     title: "TnFeed Social Network app",

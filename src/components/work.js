@@ -14,11 +14,15 @@ const Work = () => {
     let h2 = document.querySelectorAll("h2");
     let h4 = document.querySelectorAll("h4");
     let i = document.querySelectorAll("i");
+    let svg = document.querySelectorAll("svg");
+    let imgWrapper = document.querySelectorAll(".imageWrapper");
     p.forEach((el) => el.classList.toggle("opacity"));
     img.forEach((el) => el.classList.toggle("opacity"));
     h2.forEach((el) => el.classList.toggle("opacity"));
     h4.forEach((el) => el.classList.toggle("opacity"));
     i.forEach((el) => el.classList.toggle("opacity"));
+    imgWrapper.forEach((el) => el.classList.toggle("opacity"));
+    svg.forEach((el) => el.classList.toggle("opacity"));
   };
   return (
     <div className="Work">

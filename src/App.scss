@@ -25,11 +25,17 @@ $primary: #1976d2;
   .App {
     width: 100vw;
     min-height: 100vh;
-    padding: 0 170px;
+    padding: 0 200px;
     background-color: black;
+    @media screen and (max-width: 1440px) {
+      padding: 0 150px;
+    }
     .container {
       overflow: auto;
       width: 100%;
+      @media screen and (max-width: 425px) {
+        overflow-x: hidden;
+      }
       .Home {
         @include center();
         height: 100vh;
@@ -208,8 +214,10 @@ $primary: #1976d2;
       }
       .Work {
         width: 100%;
+        padding: 100px 0;
         section {
-          height: 100vh;
+          //height: 100vh;
+          padding: 50px 0;
           position: relative;
           animation: moveLeftWork 1s ease both;
           .link {
@@ -235,9 +243,16 @@ $primary: #1976d2;
             height: 30%;
             @include center();
             justify-content: flex-start;
+            margin-bottom: 50px;
             h2 {
               font-weight: 700;
               font-size: 4em;
+              @media screen and (max-width: 1440px) {
+                font-size: 3em;
+              }
+              @media screen and (max-width: 1024px) {
+                font-size: 1.5em;
+              }
             }
           }
           .showcase {
@@ -247,6 +262,9 @@ $primary: #1976d2;
             .image {
               width: 50%;
               height: 100%;
+              @media screen and (max-width: 1024px) {
+                padding: 0 20px;
+              }
               @include center();
               .imageWrapper {
                 border: 2px solid #62757f;
@@ -255,6 +273,14 @@ $primary: #1976d2;
                 height: 230px;
                 width: 470px;
                 position: relative;
+                @media screen and (max-width: 1440px) {
+                  width: 400px;
+                  height: 200px;
+                }
+                @media screen and (max-width: 1024px) {
+                  width: 100%;
+                  height: 180px;
+                }
                 img {
                   width: 100%;
                   object-fit: cover;
@@ -311,6 +337,9 @@ $primary: #1976d2;
               h4 {
                 font-weight: 500;
                 font-size: 1.5em;
+                @media screen and (max-width: 1440px) {
+                  font-size: 1.2em;
+                }
               }
             }
           }
@@ -362,16 +391,27 @@ $primary: #1976d2;
   z-index: 999;
   list-style-type: none;
   animation: navList 1s ease both;
+  top: 0;
+  right: 50px;
+  @media screen and (max-width: 1440px) {
+    backdrop-filter: blur(0px);
+  }
   li {
+    transition: all 0.4s;
+    &:hover {
+      transform: translateX(25px);
+    }
     a {
       color: rgba(255, 255, 255, 0.199);
       font-weight: 700;
       font-size: 2em;
       cursor: pointer;
       transition: all 0.4s;
+      @media screen and (max-width: 1440px) {
+        font-size: 1.3em;
+      }
       &:hover {
         color: white;
-        margin-left: 20px;
       }
     }
   }
@@ -386,6 +426,7 @@ $primary: #1976d2;
   height: 50px;
   width: 50px;
   user-select: none;
+  left: 20px;
   i {
     color: white;
     user-select: none;
@@ -566,7 +607,7 @@ a {
           section {
             .name {
               h2 {
-                font-size: 3em;
+                font-size: 2em;
               }
             }
             .showcase {
@@ -593,7 +634,7 @@ a {
                 }
                 p,
                 h4 {
-                  font-size: 1.3em;
+                  font-size: 1em;
                 }
               }
             }
@@ -662,7 +703,7 @@ a {
 @media (max-width: 600px) {
   #root {
     .App {
-      padding: 0 15px;
+      padding: 0 50px;
       .container {
         .Home {
           height: 90vh;
@@ -720,15 +761,23 @@ a {
           }
         }
         .Work {
+          padding: 50px 0;
           section {
             height: 130vh;
+            margin-bottom: 50px;
+            padding: 0;
+            svg {
+              width: 35px;
+            }
             .link {
-              bottom: -35px;
+              bottom: -40px;
+              font-size: 15px;
             }
             .name {
               height: 20%;
+              margin: 0;
               h2 {
-                font-size: 1.5em;
+                font-size: 1.3em;
               }
             }
             .showcase {
@@ -736,6 +785,7 @@ a {
               flex-direction: column;
               .image {
                 width: 100%;
+                margin-bottom: 30px;
                 img {
                   height: 150px;
                   width: 270px;
@@ -770,7 +820,6 @@ a {
   }
   .nav-list {
     display: none;
-    border-radius: 5px;
     li {
       a {
         color: white;
