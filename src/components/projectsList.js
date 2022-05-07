@@ -5,6 +5,7 @@ import chat from "../img/chatapp.png";
 import ss from "../img/ss.png";
 import nftfever from "../img/nftfever.png";
 import mdv from "../img/mdv.png";
+import rps from "../img/rps.png";
 import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -90,7 +91,7 @@ const projects = [
     title: "Rock paper scissors Game",
     description:
       "Simple Game created with React using react hooks to manage game states.",
-    preview: tnfeed,
+    preview: rps,
     techs: [{ name: "React", logo: <FaReact /> }],
   },
   {

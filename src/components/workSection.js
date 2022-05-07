@@ -19,7 +19,7 @@ export default function WorkSection({ title, preview, desc, techs, link }) {
               <div></div>
               <div></div>
             </div>
-            <img src={preview} alt="tnfeed website preview" />
+            <img src={preview} alt="website preview" />
           </div>
         </div>
         <div className="description">
