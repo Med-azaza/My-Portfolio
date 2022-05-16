@@ -6,6 +6,7 @@ import ss from "../img/ss.png";
 import nftfever from "../img/nftfever.png";
 import mdv from "../img/mdv.png";
 import rps from "../img/rps.png";
+import rfc from "../img/rfc.png";
 import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -28,6 +29,17 @@ const projects = [
     techs: [
       { name: "React", logo: <FaReact /> },
       { name: "Firebase", logo: <SiFirebase /> },
+      { name: "Sass", logo: <FaSass /> },
+    ],
+  },
+  {
+    link: "https://www.researchfundingclub.com/",
+    title: "Research Funding Club NFT",
+    description: "Research Funding Club NFT project landing page.",
+    preview: rfc,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "Sass", logo: <FaSass /> },
     ],
   },
   {
@@ -40,6 +52,7 @@ const projects = [
       { name: "React", logo: <FaReact /> },
       { name: "Firebase", logo: <SiFirebase /> },
       { name: "Framer Motion", logo: <SiFramer /> },
+      { name: "Sass", logo: <FaSass /> },
     ],
   },
   {
@@ -50,6 +63,7 @@ const projects = [
     techs: [
       { name: "React", logo: <FaReact /> },
       { name: "Firebase", logo: <SiFirebase /> },
+      { name: "Sass", logo: <FaSass /> },
     ],
   },
   {
