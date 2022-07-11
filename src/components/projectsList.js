@@ -1,6 +1,6 @@
 import todo from "../img/todo.png";
 import tnfeed from "../img/tnfeed.png";
-import weather from "../img/weather.png";
+//import weather from "../img/weather.png";
 import chat from "../img/chatapp.png";
 import ss from "../img/ss.png";
 import nftfever from "../img/nftfever.png";
@@ -13,10 +13,10 @@ import {
   SiExpress,
   SiMongodb,
   SiFirebase,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiJquery,
+  // SiHtml5,
+  // SiCss3,
+  // SiJavascript,
+  // SiJquery,
   SiFramer,
 } from "react-icons/si";
 
