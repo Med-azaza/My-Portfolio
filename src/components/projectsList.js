@@ -108,19 +108,19 @@ const projects = [
     preview: rps,
     techs: [{ name: "React", logo: <FaReact /> }],
   },
-  {
-    link: "https://weather-app88.netlify.app/",
-    title: "Weather web app",
-    description:
-      "A simple Weather web app that show basic weather infos and time of any city acroos the world,I used external API and interacted with it using AJAX.",
-    preview: weather,
-    techs: [
-      { name: "HTML5", logo: <SiHtml5 /> },
-      { name: "CSS3", logo: <SiCss3 /> },
-      { name: "JavaScript", logo: <SiJavascript /> },
-      { name: "JQuery", logo: <SiJquery /> },
-    ],
-  },
+  // {
+  //   link: "https://weather-app88.netlify.app/",
+  //   title: "Weather web app",
+  //   description:
+  //     "A simple Weather web app that show basic weather infos and time of any city acroos the world,I used external API and interacted with it using AJAX.",
+  //   preview: weather,
+  //   techs: [
+  //     { name: "HTML5", logo: <SiHtml5 /> },
+  //     { name: "CSS3", logo: <SiCss3 /> },
+  //     { name: "JavaScript", logo: <SiJavascript /> },
+  //     { name: "JQuery", logo: <SiJquery /> },
+  //   ],
+  // },
 ];
 
 export default projects;

@@ -69,7 +69,7 @@ $primary: #1976d2;
           font-weight: 700;
           font-size: 6em;
           color: white;
-          animation: fadeAway 4s;
+          animation: fadeAway 3s;
           animation-fill-mode: forwards;
           span {
             color: $primary;
@@ -78,7 +78,8 @@ $primary: #1976d2;
           }
         }
         .imageContainer {
-          animation: moveUp 6s ease both;
+          animation: moveUp 2s ease both;
+          animation-delay: 2.5s;
           width: 50%;
           height: 100%;
           position: relative;
@@ -104,7 +105,8 @@ $primary: #1976d2;
           }
         }
         .textContainer {
-          animation: moveLeft 6s ease both;
+          animation: moveLeft 2s ease both;
+          animation-delay: 2.5s;
           width: 50%;
           height: 100%;
           padding: 70px 0;
@@ -479,9 +481,6 @@ $primary: #1976d2;
   0% {
     transform: translateX(-100%);
   }
-  66% {
-    transform: translateX(-100%);
-  }
   100% {
     transform: translateX(0%);
   }
@@ -515,9 +514,6 @@ $primary: #1976d2;
 }
 @keyframes moveUp {
   0% {
-    transform: translateY(100%);
-  }
-  66% {
     transform: translateY(100%);
   }
   100% {

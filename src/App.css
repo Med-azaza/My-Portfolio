@@ -112,8 +112,8 @@ code {
   font-weight: 700;
   font-size: 6em;
   color: white;
-  -webkit-animation: fadeAway 4s;
-          animation: fadeAway 4s;
+  -webkit-animation: fadeAway 3s;
+          animation: fadeAway 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -125,8 +125,10 @@ code {
 }
 
 #root .App .container .Home .imageContainer {
-  -webkit-animation: moveUp 6s ease both;
-          animation: moveUp 6s ease both;
+  -webkit-animation: moveUp 2s ease both;
+          animation: moveUp 2s ease both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   width: 50%;
   height: 100%;
   position: relative;
@@ -169,8 +171,10 @@ code {
 }
 
 #root .App .container .Home .textContainer {
-  -webkit-animation: moveLeft 6s ease both;
-          animation: moveLeft 6s ease both;
+  -webkit-animation: moveLeft 2s ease both;
+          animation: moveLeft 2s ease both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   width: 50%;
   height: 100%;
   padding: 70px 0;
@@ -773,10 +777,6 @@ code {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  66% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
   100% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -785,10 +785,6 @@ code {
 
 @keyframes moveLeft {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  66% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
@@ -873,10 +869,6 @@ code {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
-  66% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -885,10 +877,6 @@ code {
 
 @keyframes moveUp {
   0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  66% {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
