@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import blob from "../img/blob.svg";
-import photo from "../img/my_photo.jpg";
+import photo from "../img/my_photo.jpeg";
 import { motion } from "framer-motion";
 
 const Home = () => {
