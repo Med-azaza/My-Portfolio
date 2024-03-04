@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./components/home";
 import Work from "./components/work";
@@ -6,8 +7,13 @@ import Contact from "./components/contact";
 import Error from "./components/error";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { IconContext } from "react-icons";
+import ReactGA from "react-ga";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-TQRPXH4YFB");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <IconContext.Provider value={{ className: "react-icons", size: "50px" }}>
       <div className="App">
