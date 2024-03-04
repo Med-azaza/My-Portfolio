@@ -67,7 +67,7 @@ const projects = [
     ],
   },
   {
-    link: "https://tnfeed.live",
+    link: "https://tnfeed-v2.netlify.app/",
     title: "TnFeed Social Network app",
     description:
       "Tnfeed is fullstack MERN social network web app created with the well known react framework NextJs, the backend and the frontend are separated and communicating using RestAPI.",
