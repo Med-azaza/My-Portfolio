@@ -13,18 +13,18 @@ const Timeline = ({ setActiveSection, activeSection }) => {
       className={`${activeSection === "timeline" ? "active" : "inactive"}`}
       onClick={() => setActiveSection("timeline")}
     >
-      {activeSection === "" && (
+      {activeSection === "" && window.innerWidth > 600 && (
         <div className="thumbnail default">
           <span>TIMELINE</span>
           <RiTimelineView className="icon" />
         </div>
       )}
-      {activeSection === "projects" && (
+      {activeSection === "projects" && window.innerWidth > 600 && (
         <div className="thumbnail vertical">
           <span>TIMELINE</span>
         </div>
       )}
-      {activeSection === "timeline" && (
+      {(activeSection === "timeline" || window.innerWidth < 600) && (
         <div className="timeline">
           <p>
             As a skilled React developer with a passion for building engaging

@@ -9,17 +9,17 @@ const Projects = ({ setActiveSection, activeSection }) => {
       className={`${activeSection === "projects" ? "active" : "inactive"}`}
       onClick={() => setActiveSection("projects")}
     >
-      {activeSection === "" && (
+      {activeSection === "" && window.innerWidth > 600 && (
         <div className="thumbnail default">
           <span>PROJECTS</span> <GrProjects className="icon" />
         </div>
       )}
-      {activeSection === "timeline" && (
+      {activeSection === "timeline" && window.innerWidth > 600 && (
         <div className="thumbnail vertical">
           <span>PROJECTS</span>
         </div>
       )}
-      {activeSection === "projects" && (
+      {(activeSection === "projects" || window.innerWidth < 600) && (
         <ul className="projects-list">
           {projects.map((item) => (
             <li>
@@ -32,11 +32,13 @@ const Projects = ({ setActiveSection, activeSection }) => {
                   <p>{item.description}</p>
                   <div className="techs">
                     <p>Techs used in the project:</p>
-                    {item.techs.map((item, index) => (
-                      <Tooltip key={index} title={item.name}>
-                        <span style={{ cursor: "pointer" }}>{item.logo}</span>
-                      </Tooltip>
-                    ))}
+                    <div>
+                      {item.techs.map((item, index) => (
+                        <Tooltip key={index} title={item.name}>
+                          <span style={{ cursor: "pointer" }}>{item.logo}</span>
+                        </Tooltip>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
