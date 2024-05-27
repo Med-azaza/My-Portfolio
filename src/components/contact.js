@@ -33,7 +33,7 @@ const Contact = () => {
           <br />
           <a
             rel="noreferrer"
-            href="https://www.upwork.com/freelancers/~010b18861edb78e10c"
+            href="https://www.upwork.com/freelancers/medazaza"
           >
             Upwork
           </a>
