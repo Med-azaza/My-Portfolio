@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import resume from "../files/Mohamed_Azaza_-_Front-end_react_developer_&_MERN_developer.pdf";
+import resume from "../files/mohamed-azaza-resume.pdf";
 import NavMenu from "./navMenu";
 
 const About = () => {
