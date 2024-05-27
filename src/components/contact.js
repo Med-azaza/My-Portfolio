@@ -34,6 +34,7 @@ const Contact = () => {
           <a
             rel="noreferrer"
             href="https://www.upwork.com/freelancers/medazaza"
+            target="_blank"
           >
             Upwork
           </a>
@@ -46,7 +47,11 @@ const Contact = () => {
             LinkedIn
           </a>
           <br />
-          <a rel="noreferrer" href="https://github.com/Med-azaza/">
+          <a
+            rel="noreferrer"
+            href="https://github.com/Med-azaza/"
+            target="_blank"
+          >
             Github
           </a>
         </p>
