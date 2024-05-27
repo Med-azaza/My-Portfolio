@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import WorkSection from "./workSection";
+import NavMenu from "./navMenu";
 
 import projects from "./projectsList";
 
@@ -29,17 +29,7 @@ const Work = () => {
       <button onClick={show} className="nav-btn">
         <i className="fas fa-bars"></i>
       </button>
-      <ul className="nav-list">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+      <NavMenu />
       {projects.map((item, index) => (
         <WorkSection
           title={item.title}

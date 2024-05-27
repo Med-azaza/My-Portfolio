@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import blob from "../img/blob.svg";
 import photo from "../img/my_photo.jpeg";
-import { motion } from "framer-motion";
+import { FaReact } from "react-icons/fa";
 
 const Home = () => {
   const showLinks = () => {
@@ -34,15 +33,9 @@ const Home = () => {
         <br />
       </div>
       <div className="imageContainer">
-        <motion.img
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, ease: "linear", duration: 8 }}
-          className="blob"
-          src={blob}
-          alt="rotating blob"
-        />
         <img className="photo" src={photo} alt="owner of the portfolio" />
       </div>
+      <FaReact className="react-icon" color="#1976d2" />
     </div>
   );
 };

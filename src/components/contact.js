@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import NavMenu from "./navMenu";
+
 const Contact = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0;
@@ -13,17 +14,7 @@ const Contact = () => {
       <button onClick={show} className="nav-btn">
         <i className="fas fa-bars"></i>
       </button>
-      <ul className="nav-list">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/work">Work</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+      <NavMenu />
       <header>
         <p>Let's make something great!</p>
       </header>

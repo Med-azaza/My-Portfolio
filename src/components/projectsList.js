@@ -33,7 +33,7 @@ const projects = [
     ],
   },
   {
-    link: "https://www.researchfundingclub.com/",
+    link: "",
     title: "Research Funding Club NFT",
     description: "Research Funding Club NFT project landing page.",
     preview: rfc,
