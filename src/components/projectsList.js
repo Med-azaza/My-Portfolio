@@ -24,7 +24,8 @@ const projects = [
   {
     link: "https://milliondollarvault.io/",
     title: "Million Dollar Vault",
-    description: "Million Dollar Vault NFT project landing page.",
+    description:
+      "The Million Dollar Vault NFT project connects enthusiasts globally on a seamless platform powered by React.js and Firebase. Now open to the public, it fosters a vibrant community for trading unique digital assets. With robust infrastructure for high transaction volumes, it welcomes both seasoned collectors and newcomers. Explore innovation and excitement in the world of non-fungible tokens!",
     preview: mdv,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -35,7 +36,8 @@ const projects = [
   {
     link: "",
     title: "Research Funding Club NFT",
-    description: "Research Funding Club NFT project landing page.",
+    description:
+      "A visionary initiative leveraging digital innovation to support research institutions tackling the world's deadliest diseases. By purchasing these NFTs, individuals and organizations contribute directly to vital scientific efforts, ensuring researchers have the necessary resources. The website features a user-friendly interface powered by React.js, showcasing unique NFTs that represent not just art, but a commitment to advancing global health.",
     preview: rfc,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -46,7 +48,7 @@ const projects = [
     link: "https://shrewdsharks.io/",
     title: "Shrewd Sharks",
     description:
-      "Shrewd Sharks NFT project landing page with implementation of transitions and animations using farmer motion.",
+      "The Shrewd Sharks NFT project landing page showcases my expertise in creating dynamic and visually engaging websites using React.js. Designed to attract and captivate users, this NFT website features seamless transitions and animations implemented through the powerful Framer Motion library. With a clean and modern layout, the landing page guides users effortlessly through the site's sections.",
     preview: ss,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -58,7 +60,8 @@ const projects = [
   {
     link: "https://nftfever.io/",
     title: "NFT Fever",
-    description: "NFT learning website using video courses.",
+    description:
+      "NFT Fever is an innovative platform for learning about NFTs, built with React JS and Firebase. It offers engaging video courses for both beginners and seasoned enthusiasts, covering NFT creation, investment strategies, and blockchain technology. Each course is designed to provide valuable insights and practical knowledge. ",
     preview: nftfever,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -70,7 +73,7 @@ const projects = [
     link: "https://tnfeed-v2.netlify.app/",
     title: "TnFeed Social Network app",
     description:
-      "Tnfeed is fullstack MERN social network web app created with the well known react framework NextJs, the backend and the frontend are separated and communicating using RestAPI.",
+      "Tnfeed is a full-stack social network app built on the MERN stack, utilizing React and Next.js for a seamless user experience. Its architecture separates the backend and frontend, allowing efficient communication via a RESTful API. This design ensures scalability and flexibility, making Tnfeed perfect for social networking.",
     preview: tnfeed,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -85,7 +88,7 @@ const projects = [
     link: "https://commutify01.netlify.app/",
     title: "Commutify chat app",
     description:
-      "Commutify is a simple chat app with a global room (it will be more rooms soon), the app uses google sign-in for an easy and simple authentication for the users ,also the messages is synced in real time.",
+      "Commutify is an intuitive chat app that fosters global conversations with a seamless user experience. It currently features a global chat room, with plans for expansion. Users can easily sign in with Google for secure onboarding. Built with React and Firebase, the app offers real-time message synchronization.",
     preview: chat,
     techs: [
       { name: "React", logo: <FaReact /> },

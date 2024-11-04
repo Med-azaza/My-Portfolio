@@ -15,10 +15,14 @@ const About = () => {
   const el = React.useRef(null);
   const typed = React.useRef(null);
   React.useEffect(() => {
+    const firstParagraph =
+      "Hi, I'm Mohamed. With a background in computer science and over three years of experience in Software Development, I've honed my skills as a Front-end Web Developer, specializing in ReactJs and the MERN stack.";
+    const secondPraragraph =
+      "However, I prefer not to be defined solely by my past work experiences. Instead, I am deeply driven by the ambitious projects I aspire to undertake in the future. I believe that while skills can be taught, true passion and creativity come from a commitment to continuous learning and personal growth. I thrive on new challenges that push me out of my comfort zone and allow me to think outside the box. I’m eager to collaborate with others who share a similar vision, as I believe that together we can innovate and create something truly remarkable. Let's explore new possibilities and make a meaningful impact together.";
     const options = {
       strings: [
         "Compiling... ^7500 Compiled successfully",
-        `<code>const aboutMe=()=&gt;{ <br /> console.log("   </code> Hi, I am Med, I am a past computer science student with over 5 years of experience in the IT field. <code>);</code><br /><br /><code>console.log(" </code> You can call me a Front-end web developer, ReactJs developer and MERN developer,  I don't like to define myself by the work i have done. I define myself by the work i want to do. Skills can be taught and i am always open to learn new things, especially continue challenging myself. <code>);</code> <br /><br /> <code>return(</code> You can read more about my experience, Skills, education and much more in the PDF below: <code>);</code> <br /> <a href=${resume} target="_blank">//My resume</a>  <br/> <code>}</code>`,
+        `<code>const aboutMe=()=&gt;{ <br /> console.log("   </code> ${firstParagraph} <code>);</code><br /><br /><code>console.log(" </code> ${secondPraragraph} <code>);</code> <br /><br /> <code>return(</code> You can read more about my experience, Skills, education and much more in the PDF below: <code>);</code> <br /> <a href=${resume} target="_blank">//My resume</a>  <br/> <code>}</code>`,
       ],
       typeSpeed: 6,
       backSpeed: 20,
