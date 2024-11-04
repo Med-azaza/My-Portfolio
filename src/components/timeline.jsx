@@ -37,7 +37,7 @@ const Timeline = ({ setActiveSection, activeSection }) => {
             <MuiTimeline>
               <TimelineItem>
                 <TimelineOppositeContent color="rgba(255, 255, 255, 0.555)">
-                  Jul 21 - Oct 21
+                  Jul 2021 - Oct 2021
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot color="primary" />
@@ -53,7 +53,7 @@ const Timeline = ({ setActiveSection, activeSection }) => {
               </TimelineItem>
               <TimelineItem position="alternate">
                 <TimelineOppositeContent color="rgba(255, 255, 255, 0.555)">
-                  Oct 21 - May 22
+                  Oct 2021 - May 2022
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot color="primary" />
@@ -69,7 +69,7 @@ const Timeline = ({ setActiveSection, activeSection }) => {
               </TimelineItem>
               <TimelineItem>
                 <TimelineOppositeContent color="rgba(255, 255, 255, 0.555)">
-                  May 22 - Present
+                  May 2022 - Oct 2024
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot color="primary" />
