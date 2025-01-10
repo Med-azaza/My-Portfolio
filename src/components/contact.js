@@ -1,4 +1,5 @@
 import NavMenu from "./navMenu";
+import { RiScrollToBottomLine } from "react-icons/ri";
 
 const Contact = () => {
   document.body.scrollTop = 0; // For Safari
@@ -17,6 +18,11 @@ const Contact = () => {
       <NavMenu />
       <header>
         <p>Let's make something great!</p>
+        <div className="scroll-prompt">
+          <div className="scroll-arrow">
+            <RiScrollToBottomLine />
+          </div>
+        </div>
       </header>
       <section>
         <h3>Contact</h3>

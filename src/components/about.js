@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "typed.js";
 import resume from "../files/mohamed-azaza-resume.pdf";
 import NavMenu from "./navMenu";
+import { RiScrollToBottomLine } from "react-icons/ri";
 
 const About = () => {
   document.body.scrollTop = 0; // For Safari
@@ -43,6 +44,11 @@ const About = () => {
           I develop user interfaces & build MERN stack web apps, with L
           <i className="fas fa-heart"></i>VE.
         </p>
+        <div className="scroll-prompt">
+          <div className="scroll-arrow">
+            <RiScrollToBottomLine />
+          </div>
+        </div>
       </header>
       <section>
         <h3>About</h3>
