@@ -1,12 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { PostHogProvider } from "posthog-js/react";
+
+const options = {
+  api_host: "https://eu.i.posthog.com",
+};
 
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+  <PostHogProvider
+    apiKey="phc_W8nY3HYQXbs4cTcVIpgD67mfkQSBvXAPDmqoj2gYCxS"
+    options={options}
+  >
+    <App />
+  </PostHogProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
