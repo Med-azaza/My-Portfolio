@@ -1,4 +1,3 @@
-import { RiTimelineView } from "react-icons/ri";
 import { default as MuiTimeline } from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -6,6 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import { FaTimeline } from "react-icons/fa6";
 
 const Timeline = ({ setActiveSection, activeSection }) => {
   return (
@@ -16,7 +16,7 @@ const Timeline = ({ setActiveSection, activeSection }) => {
       {activeSection === "" && window.innerWidth > 600 && (
         <div className="thumbnail default">
           <span>TIMELINE</span>
-          <RiTimelineView className="icon" />
+          <FaTimeline className="icon" />
         </div>
       )}
       {activeSection === "projects" && window.innerWidth > 600 && (

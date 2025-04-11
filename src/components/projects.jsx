@@ -1,7 +1,7 @@
 import projects from "./projectsList";
 import Tooltip from "@mui/material/Tooltip";
 import { FaEye } from "react-icons/fa";
-import { GrProjects } from "react-icons/gr";
+import { FaLaptopCode } from "react-icons/fa6";
 
 const Projects = ({ setActiveSection, activeSection }) => {
   return (
@@ -11,7 +11,7 @@ const Projects = ({ setActiveSection, activeSection }) => {
     >
       {activeSection === "" && window.innerWidth > 600 && (
         <div className="thumbnail default">
-          <span>PROJECTS</span> <GrProjects className="icon" />
+          <span>PROJECTS</span> <FaLaptopCode className="icon" />
         </div>
       )}
       {activeSection === "timeline" && window.innerWidth > 600 && (
