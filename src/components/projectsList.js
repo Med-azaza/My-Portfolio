@@ -25,7 +25,7 @@ const projects = [
     link: "https://milliondollarvault.io/",
     title: "Million Dollar Vault",
     description:
-      "The Million Dollar Vault NFT project connects enthusiasts globally on a seamless platform powered by React.js and Firebase. Now open to the public, it fosters a vibrant community for trading unique digital assets. With robust infrastructure for high transaction volumes, it welcomes both seasoned collectors and newcomers. Explore innovation and excitement in the world of non-fungible tokens!",
+      "The Million Dollar Vault NFT project connects collectors on a fast, easy-to-use platform built with React.js and Firebase. Open to everyone, it offers a vibrant space to trade unique digital assets and explore the exciting world of NFTs.",
     preview: mdv,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -37,7 +37,7 @@ const projects = [
     link: "",
     title: "Research Funding Club NFT",
     description:
-      "A visionary initiative leveraging digital innovation to support research institutions tackling the world's deadliest diseases. By purchasing these NFTs, individuals and organizations contribute directly to vital scientific efforts, ensuring researchers have the necessary resources. The website features a user-friendly interface powered by React.js, showcasing unique NFTs that represent not just art, but a commitment to advancing global health.",
+      "A digital initiative supporting research on deadly diseases through NFT sales. Buyers help fund scientists directly. Built with React.js, the site offers unique NFTs that stand for art and global health.",
     preview: rfc,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -48,7 +48,7 @@ const projects = [
     link: "https://shrewdsharks.io/",
     title: "Shrewd Sharks",
     description:
-      "The Shrewd Sharks NFT project landing page showcases my expertise in creating dynamic and visually engaging websites using React.js. Designed to attract and captivate users, this NFT website features seamless transitions and animations implemented through the powerful Framer Motion library. With a clean and modern layout, the landing page guides users effortlessly through the site's sections.",
+      "The Shrewd Sharks NFT landing page highlights my skills in building engaging React.js websites. It features smooth Framer Motion animations and a clean layout that guides users through each section with ease.",
     preview: ss,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -61,7 +61,7 @@ const projects = [
     link: "https://nftfever.io/",
     title: "NFT Fever",
     description:
-      "NFT Fever is an innovative platform for learning about NFTs, built with React JS and Firebase. It offers engaging video courses for both beginners and seasoned enthusiasts, covering NFT creation, investment strategies, and blockchain technology. Each course is designed to provide valuable insights and practical knowledge. ",
+      "NFT Fever is a React.js and Firebase platform for learning about NFTs. It offers video courses for all levels, covering NFT creation, investing, and blockchain with practical tips and insights.",
     preview: nftfever,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -73,7 +73,7 @@ const projects = [
     link: "https://tnfeed-v2.netlify.app/",
     title: "TnFeed Social Network app",
     description:
-      "Tnfeed is a full-stack social network app built on the MERN stack, utilizing React and Next.js for a seamless user experience. Its architecture separates the backend and frontend, allowing efficient communication via a RESTful API. This design ensures scalability and flexibility, making Tnfeed perfect for social networking.",
+      "Tnfeed is a full-stack social app built with the MERN stack, using React and Next.js. A RESTful API connects the frontend and backend, ensuring a smooth, scalable, and flexible experience.",
     preview: tnfeed,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -88,7 +88,7 @@ const projects = [
     link: "https://commutify01.netlify.app/",
     title: "Commutify chat app",
     description:
-      "Commutify is an intuitive chat app that fosters global conversations with a seamless user experience. It currently features a global chat room, with plans for expansion. Users can easily sign in with Google for secure onboarding. Built with React and Firebase, the app offers real-time message synchronization.",
+      "Commutify is a chat app for global conversations, featuring a real-time chat room and Google sign-in. Built with React and Firebase, it ensures smooth, secure, and instant messaging.",
     preview: chat,
     techs: [
       { name: "React", logo: <FaReact /> },
@@ -99,7 +99,7 @@ const projects = [
     link: "https://reacttodoapp0.netlify.app/",
     title: "React TODO app",
     description:
-      "TODO web app with dark and light mode,also user todos will be saved based on device.",
+      "A simple TODO web app with dark and light mode. User tasks are saved locally based on the device, ensuring a smooth and personalized experience without needing an account.",
     preview: todo,
     techs: [{ name: "React", logo: <FaReact /> }],
   },
@@ -107,7 +107,7 @@ const projects = [
     link: "https://rpsgame-01.netlify.app/",
     title: "Rock paper scissors Game",
     description:
-      "Simple Game created with React using react hooks to manage game states.",
+      "A simple game built with React, using React Hooks to manage game states for smooth and interactive gameplay.",
     preview: rps,
     techs: [{ name: "React", logo: <FaReact /> }],
   },
