@@ -463,6 +463,12 @@ $primary: #1976d2;
   right: 50px;
   @media screen and (max-width: 1440px) {
     backdrop-filter: blur(0px);
+    li {
+      .icon {
+        height: 20px !important;
+        width: 20px !important;
+      }
+    }
   }
   li {
     transition: all 0.4s;
