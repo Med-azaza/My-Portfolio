@@ -725,13 +725,9 @@ a {
           > div {
             .projects-list {
               li {
-                height: 150px;
-                &:hover {
+                .project-details {
+                  flex-direction: column;
                   height: auto;
-                  .project-details {
-                    flex-direction: column;
-                    height: auto;
-                  }
                 }
                 .project-details {
                   padding: 0 20px;
@@ -972,13 +968,10 @@ a {
             .projects-list {
               padding: 0 5px;
               li {
-                height: 150px;
-                &:hover {
+                height: auto;
+                .project-details {
+                  flex-direction: column;
                   height: auto;
-                  .project-details {
-                    flex-direction: column;
-                    height: auto;
-                  }
                 }
                 .project-details {
                   padding: 0 20px;
@@ -1079,7 +1072,7 @@ a {
       list-style-type: none;
       overflow-y: scroll;
       animation: delayShow 0.8s ease-in-out;
-      padding-right: 5px;
+      padding: 5px;
       &::-webkit-scrollbar {
         all: unset;
         width: 8px;
@@ -1100,30 +1093,16 @@ a {
       li {
         border-radius: 5px;
         width: 100%;
-        background-color: $primary;
-        height: 200px;
-        transition: height 0.5s ease, background-color 0.5s ease;
+        border: 2px solid #1976d263;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
         overflow: hidden;
         padding-block: 50px;
+        gap: 2rem;
         &:not(:last-child) {
           margin-bottom: 10px;
-        }
-        &:hover {
-          height: 600px;
-          background-color: transparent;
-          .project-details {
-            opacity: 1;
-            margin-block: 30px;
-            height: 250px;
-          }
-          button {
-            animation: fadeIn 0.8s ease-in-out;
-            opacity: 1;
-          }
         }
         h2 {
           font-weight: 500;
@@ -1139,7 +1118,6 @@ a {
           display: flex;
           align-items: center;
           justify-content: center;
-          opacity: 0;
           transition: opacity 0.3s ease;
           width: 100%;
           padding: 0 50px;
@@ -1152,7 +1130,7 @@ a {
             justify-content: center;
             img {
               height: 200px;
-              border-radius: 20px;
+              border-radius: 10px;
             }
           }
           .details {
@@ -1176,7 +1154,6 @@ a {
           }
         }
         button {
-          opacity: 0;
           background-color: rgba(255, 255, 255, 0.582);
           // width: 200px;
           height: 50px;
