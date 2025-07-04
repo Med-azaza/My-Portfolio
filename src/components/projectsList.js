@@ -7,20 +7,34 @@ import nftfever from "../img/nftfever.png";
 import mdv from "../img/mdv.png";
 import rps from "../img/rps.png";
 import rfc from "../img/rfc.png";
+import lc from "../img/linkcrate.png";
 import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiExpress,
   SiMongodb,
   SiFirebase,
-  // SiHtml5,
-  // SiCss3,
-  // SiJavascript,
-  // SiJquery,
   SiFramer,
+  SiVite,
 } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiSupabaseLine, RiTailwindCssFill } from "react-icons/ri";
 
 const projects = [
+  {
+    link: "https://link-crate.vercel.app/",
+    title: "LinkCrate",
+    description:
+      "LinkCrate is a modern web app built with React, TypeScript, and Supabase. It allows users to create accounts, manage social/media links, and upload profile images. Each user gets a unique shareable link and a QR code directing to their public profile page, perfect for networking and showcasing their online presence.",
+    preview: lc,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "TypeScript", logo: <BiLogoTypescript /> },
+      { name: "Vite", logo: <SiVite /> },
+      { name: "Supabase", logo: <RiSupabaseLine /> },
+      { name: "TailwindCSS", logo: <RiTailwindCssFill /> },
+    ],
+  },
   {
     link: "https://milliondollarvault.io/",
     title: "Million Dollar Vault",
