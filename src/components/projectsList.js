@@ -8,6 +8,7 @@ import mdv from "../img/mdv.png";
 import rps from "../img/rps.png";
 import rfc from "../img/rfc.png";
 import lc from "../img/linkcrate.png";
+import mm from "../img/match-mates.png";
 import { FaReact, FaSass, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -16,6 +17,7 @@ import {
   SiFirebase,
   SiFramer,
   SiVite,
+  SiVercel,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiSupabaseLine, RiTailwindCssFill } from "react-icons/ri";
@@ -33,6 +35,21 @@ const projects = [
       { name: "Vite", logo: <SiVite /> },
       { name: "Supabase", logo: <RiSupabaseLine /> },
       { name: "TailwindCSS", logo: <RiTailwindCssFill /> },
+      { name: "Vercel", logo: <SiVercel /> },
+    ],
+  },
+  {
+    link: "https://match-mates.vercel.app/",
+    title: "MatchMates",
+    description:
+      "MatchMates is an engaging memory card game built with React, TypeScript, Vite, and SCSS. Designed for 1-4 players, it challenges users to match pairs of cards with customizable themes and grid sizes (4x4 or 6x6). The app tracks time, moves, and scores in real time, catering to both solo and multiplayer sessions. With a sleek interface and intuitive controls, MatchMates delivers a fun and interactive experience while showcasing modern front-end development skills.",
+    preview: mm,
+    techs: [
+      { name: "React", logo: <FaReact /> },
+      { name: "TypeScript", logo: <BiLogoTypescript /> },
+      { name: "Vite", logo: <SiVite /> },
+      { name: "Sass", logo: <FaSass /> },
+      { name: "Vercel", logo: <SiVercel /> },
     ],
   },
   {
